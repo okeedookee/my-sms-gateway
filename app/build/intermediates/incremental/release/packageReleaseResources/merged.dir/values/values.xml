@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#E3F2FD</color>
+    <string name="app_name">Sms Gateway</string>
+    <style name="Base.Theme.SmsGateway" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.SmsGateway" parent="Base.Theme.SmsGateway"/>
+</resources>

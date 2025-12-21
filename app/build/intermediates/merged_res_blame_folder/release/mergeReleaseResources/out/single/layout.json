@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.okeedookee.utils.app-mergeReleaseResources-36:/layout/activity_settings.xml",
+        "source": "com.okeedookee.utils.app-main-38:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.okeedookee.utils.app-mergeReleaseResources-36:/layout/item_log.xml",
+        "source": "com.okeedookee.utils.app-main-38:/layout/item_log.xml"
+    },
+    {
+        "merged": "com.okeedookee.utils.app-mergeReleaseResources-36:/layout/activity_main.xml",
+        "source": "com.okeedookee.utils.app-main-38:/layout/activity_main.xml"
+    }
+]

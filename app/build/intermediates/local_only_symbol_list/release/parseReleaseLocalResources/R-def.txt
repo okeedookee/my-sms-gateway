@@ -1,0 +1,26 @@
+R_DEF: Internal format may change without notice
+local
+color ic_launcher_background
+id btnSave
+id btnSettings
+id btnStart
+id btnStop
+id etFileUrl
+id etInterval
+id etToken
+id rvLogs
+id tvDisclaimer
+id tvMessage
+id tvNextRunTimer
+id tvTime
+layout activity_main
+layout activity_settings
+layout item_log
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.SmsGateway
+style Theme.SmsGateway
+xml backup_rules
+xml data_extraction_rules
