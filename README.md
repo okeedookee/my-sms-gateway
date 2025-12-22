@@ -2,6 +2,10 @@
 
 A robust Android application that turns your device into an SMS gateway, orchestrated remotely via GitHub. This app allows you to schedule and send SMS messages using a configuration hosted on a private GitHub repository.
 
+## Architecture
+<img width="1392" height="1026" alt="image" src="https://github.com/user-attachments/assets/fef94d88-4b6a-4b1b-a07b-6f6f1037d866" />
+
+
 ## Features
 
 - **Remote Orchestration**: Fetch SMS commands from a JSON file hosted on GitHub.
@@ -25,16 +29,10 @@ A robust Android application that turns your device into an SMS gateway, orchest
 ### Prerequisites
 
 1. **GitHub Repository**: Create a private repository to host your command file.
-2. **Command File**: Create a JSON file (e.g., `commands.json`) in your repository.
-   ```json
-   {
-     "iphone": [
-       {
-         "message": "Hello from Gateway",
-         "phone": "+1234567890"
-       }
-     ]
-   }
+2. **Command File**: Create a CSV file (e.g., `sms.txt`) in your repository.
+   ```csv
+   6479331723,"LLM is beautiful."
+   4165567451,"AI is great!"
    ```
 3. **Personal Access Token (PAT)**: Generate a GitHub PAT with `repo` scope to allow the app to read the private file.
 
@@ -65,6 +63,23 @@ The app requires the following permissions to function:
 - **Logs show "Error fetching commands"?**
     - Verify your GitHub Token is valid and has the correct scopes.
     - Check your internet connection.
+
+## Tips
+Use the `curl` command to create a command file in your automation, enabling your workflow to send mobile notifications.
+```
+echo '
+4167772827,"Your breakfast is ready"
+9193851245,"My flight is landing at 5:00pm, please do not forget to pick me up."
+' | \
+curl -X PUT \
+  -H "Accept: application/vnd.github.v3+json" \
+  -H "Authorization: token YOUR_GITHUB_TOKEN" \
+  https://api.github.com/repos/okeedookee/sms-gateway-storage/contents/sms.txt \
+  -d '{
+    "message": "Create sms.txt",
+    "content": "'"$(cat - | base64 -w 0)"'"
+  }'
+```
 
 ## License
 
