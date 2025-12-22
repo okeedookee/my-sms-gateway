@@ -43,7 +43,7 @@ A robust Android application that turns your device into an SMS gateway, orchest
 1. Launch the **SMS Gateway** app.
 2. Tap the **Settings** icon (gear).
 3. Enter the following details:
-    - **GitHub File URL**: The raw URL or API URL to your JSON file.
+    - **GitHub File URL**: The raw URL or API URL to your JSON file (example: https://github.com/okeedookee/sms-gateway-storage/blob/main/sms.txt).
     - **GitHub Token**: Your Personal Access Token (starts with `ghp_`).
     - **Check Interval**: Frequency in minutes (default: 15).
 4. Tap **Save**.
