@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         android.widget.TextView tvDisclaimer = findViewById(R.id.tvDisclaimer);
         tvDisclaimer.setOnClickListener(v -> {
             Intent browserIntent = new Intent(Intent.ACTION_VIEW,
-                    android.net.Uri.parse("https://github.com/okeedookee"));
+                    android.net.Uri.parse("mailto:tookeedookee@gmail.com"));
             startActivity(browserIntent);
         });
 
