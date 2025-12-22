@@ -11,9 +11,6 @@ local.properties
 
 # Android Studio and IntelliJ IDEA
 .idea/
-*.iml
-*.iws
-*.ipr
 .vscode/
 
 # OS specific
