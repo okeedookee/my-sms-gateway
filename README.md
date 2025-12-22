@@ -1,4 +1,4 @@
-# SMS Gateway
+# My SMS Gateway
 
 A robust Android application that turns your device into an SMS gateway, orchestrated remotely via GitHub. This app allows you to schedule and send SMS messages using a configuration hosted on a private GitHub repository.
 
