@@ -2,7 +2,22 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.SmsGateway" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Dark blue for all primary elements -->
+        <item name="colorPrimary">@color/dark_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/dark_blue</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+        <item name="colorSecondary">@color/dark_blue</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Dark blue for text and hints -->
+        <item name="android:textColorPrimary">@color/dark_blue</item>
+        <item name="android:textColorSecondary">@color/dark_blue</item>
+        <item name="android:textColorHint">@color/dark_blue</item>
+        <item name="editTextColor">@color/dark_blue</item>
+        <item name="hintTextColor">@color/dark_blue</item>
+        <item name="colorOnSurfaceVariant">@color/dark_blue</item>
+        <!-- Dark blue for outlines -->
+        <item name="colorOutline">@color/dark_blue</item>
     </style>
 
     <style name="Theme.SmsGateway" parent="Base.Theme.SmsGateway" />
